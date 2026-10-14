@@ -28,25 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            btnWarning = new Button();
             SuspendLayout();
             // 
-            // button1
+            // btnWarning
             // 
-            button1.Location = new Point(341, 163);
-            button1.Name = "button1";
-            button1.Size = new Size(129, 84);
-            button1.TabIndex = 0;
-            button1.Text = "Don't Click Me!";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnWarning.Location = new Point(341, 163);
+            btnWarning.Name = "btnWarning";
+            btnWarning.Size = new Size(129, 84);
+            btnWarning.TabIndex = 0;
+            btnWarning.Text = "Don't Click Me!";
+            btnWarning.UseVisualStyleBackColor = true;
+            btnWarning.Click += BtnWarning_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button1);
+            Controls.Add(btnWarning);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -54,6 +54,6 @@
 
         #endregion
 
-        private Button button1;
+        private Button btnWarning;
     }
 }
