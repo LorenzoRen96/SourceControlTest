@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             btnWarning = new Button();
+            lblClickMe = new Label();
             SuspendLayout();
             // 
             // btnWarning
@@ -41,19 +42,31 @@
             btnWarning.UseVisualStyleBackColor = true;
             btnWarning.Click += BtnWarning_Click;
             // 
+            // lblClickMe
+            // 
+            lblClickMe.AutoSize = true;
+            lblClickMe.Location = new Point(256, 163);
+            lblClickMe.Name = "lblClickMe";
+            lblClickMe.Size = new Size(56, 15);
+            lblClickMe.TabIndex = 1;
+            lblClickMe.Text = "Click Me!";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(lblClickMe);
             Controls.Add(btnWarning);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Misleading Button";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button btnWarning;
+        private Label lblClickMe;
     }
 }
