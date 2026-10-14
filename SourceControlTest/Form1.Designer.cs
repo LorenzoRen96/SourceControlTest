@@ -37,8 +37,9 @@
             button1.Name = "button1";
             button1.Size = new Size(129, 84);
             button1.TabIndex = 0;
-            button1.Text = "button1";
+            button1.Text = "Don't Click Me!";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Form1
             // 
